@@ -26,7 +26,11 @@ jobs:
           if: github.event.inputs.compress == '1'
           run: compress
           
-        - name: Upload to Drive
-          run: torrent upload 1-u94ApPELl5b3Hpu3SRWReL3KuBzjV7X
+        - name: Upload a Build Artifact
+          uses: actions/upload-artifact@v4.3.1
+          with:
+           name: SHIT!
+           path: .
+            
 
         
